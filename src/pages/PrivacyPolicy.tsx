@@ -5,12 +5,22 @@ export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <header className="pt-28 pb-12 bg-secondary">
-        <div className="container mx-auto px-4">
-          <h1 className="font-display text-4xl font-bold text-foreground">Privacy Policy</h1>
-          <p className="text-muted-foreground mt-2">Last updated: February 2026</p>
-        </div>
-      </header>
+    <header
+  className="relative min-h-[40vh] flex items-center justify-center pt-28 pb-20 overflow-hidden text-center"
+  style={{
+    background:
+      "linear-gradient(135deg, hsl(218, 56%, 8%) 0%, hsl(220, 70%, 16%) 100%)",
+  }}
+>
+  <div className="container mx-auto px-4">
+    <h1 className="font-display text-4xl md:text-5xl font-bold text-white">
+      Privacy Policy
+    </h1>
+    <p className="text-white/70 mt-3">
+      Last updated: February 2026
+    </p>
+  </div>
+</header>
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 max-w-3xl prose prose-lg">
           <div className="space-y-8 text-foreground">
@@ -20,7 +30,7 @@ export default function PrivacyPolicy() {
               { title: "3. Information Sharing", content: "We do not sell, trade, or rent your personal information to third parties. We may share information with trusted service providers who assist in operating our business, subject to confidentiality agreements." },
               { title: "4. Data Security", content: "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction." },
               { title: "5. Cookies", content: "Our website uses cookies to enhance your browsing experience and analyze site traffic. You can control cookie settings through your browser preferences." },
-              { title: "6. Contact Us", content: "For any privacy-related questions, contact us at info.pguniquedigitalsolutions@gmail.com or call +91 9182970173." },
+              { title: "6. Contact Us", content: "For any privacy-related questions, contact us at info.pguniquedigitalsolutions2@gmail.com or call +91 9182970173." },
             ].map((s) => (
               <div key={s.title}>
                 <h2 className="font-display text-xl font-bold text-foreground mb-2">{s.title}</h2>

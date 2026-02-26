@@ -136,86 +136,58 @@ export default function Index() {
       <Navbar />
 
       {/* Hero Section */}
-      <header
-        className="relative min-h-screen flex items-center overflow-hidden"
-        style={{
-          background: "linear-gradient(135deg, hsl(218, 56%, 8%) 0%, hsl(220, 70%, 16%) 50%, hsl(218, 56%, 8%) 100%)",
-        }}
-      >
-        {/* Background image overlay */}
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage: `url(${heroBg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/60 via-transparent to-brand-navy/80" />
-        <div className="absolute inset-0 grid-pattern opacity-40" />
+    <header
+  className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-30"
+  style={{
+    background:
+      "linear-gradient(135deg, hsl(218, 56%, 8%) 0%, hsl(220, 70%, 16%) 50%, hsl(218, 56%, 8%) 100%)",
+  }}
+>
+  {/* Background image overlay */}
+  <div
+    className="absolute inset-0 opacity-30"
+    style={{
+      backgroundImage: `url(${heroBg})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+  />
+  <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/60 via-transparent to-brand-navy/80" />
+  <div className="absolute inset-0 grid-pattern opacity-40" />
 
-        <div className="relative container mx-auto px-4 pt-28 pb-20">
-          <div className="max-w-4xl">
-            {/* Pill badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-light/30 bg-brand-blue/20 text-brand-light text-sm font-medium mb-6 animate-fade-in">
-              <span className="w-2 h-2 rounded-full bg-brand-light animate-pulse" />
-              Digital Transformation Partner for India's Fast-Growing Companies
-            </div>
+  <div className="relative container mx-auto px-4 flex justify-center">
+    <div className="max-w-4xl text-center">
+      <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
+        We Build{" "}
+        <span className="gradient-text">Scalable Digital Systems</span>{" "}
+        That Grow Your Business.
+      </h1>
 
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
-              We Build{" "}
-              <span className="gradient-text">Scalable Digital Systems</span>{" "}
-              That Grow Your Business.
-            </h1>
+      <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-8 max-w-2xl mx-auto animate-fade-in-up delay-200">
+        End-to-end digital transformation — performance marketing, custom software engineering,
+        cloud infrastructure, DevOps automation, and business process optimization.
+        Built to scale from Day 1.
+      </p>
 
-            <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-8 max-w-2xl animate-fade-in-up delay-200">
-              End-to-end digital transformation — performance marketing, custom software engineering,
-              cloud infrastructure, DevOps automation, and business process optimization.
-              Built to scale from Day 1.
-            </p>
+      <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up delay-300">
+        <Link
+          to="/contact"
+          className="btn-brand inline-flex items-center gap-2 px-7 py-4 rounded-xl text-base font-bold text-white"
+        >
+          <Phone size={18} />
+          Book Free Strategy Call
+        </Link>
 
-            <div className="flex flex-wrap gap-4 animate-fade-in-up delay-300">
-              <Link
-                to="/contact"
-                className="btn-brand inline-flex items-center gap-2 px-7 py-4 rounded-xl text-base font-bold text-white"
-              >
-                <Phone size={18} />
-                Book Free Strategy Call
-              </Link>
-              <Link
-                to="/services"
-                className="btn-brand-outline inline-flex items-center gap-2 px-7 py-4 rounded-xl text-base font-semibold"
-              >
-                Explore Services <ArrowRight size={18} />
-              </Link>
-            </div>
-
-            {/* Trust signals */}
-            <div className="flex flex-wrap gap-5 mt-10 animate-fade-in-up delay-400">
-              {["ISO-aligned Processes", "150+ Projects Delivered", "Pan-India Teams"].map((t) => (
-                <div key={t} className="flex items-center gap-2 text-sm text-white/65">
-                  <CheckCircle2 size={14} className="text-brand-light flex-shrink-0" />
-                  {t}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Stats bar */}
-        <div className="absolute bottom-0 left-0 right-0 bg-white/5 backdrop-blur-sm border-t border-white/10">
-          <div className="container mx-auto px-4 py-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {stats.map((s) => (
-                <div key={s.label} className="text-center">
-                  <div className="stat-number font-display text-2xl font-bold">{s.value}</div>
-                  <div className="text-white/55 text-xs mt-0.5">{s.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </header>
+        <Link
+          to="/services"
+          className="btn-brand-outline inline-flex items-center gap-2 px-7 py-4 rounded-xl text-base font-semibold"
+        >
+          Explore Services <ArrowRight size={18} />
+        </Link>
+      </div>
+    </div>
+  </div>
+</header>
 
       {/* About Snapshot */}
       <section className="py-20 bg-background" aria-labelledby="about-heading">
@@ -509,7 +481,7 @@ export default function Index() {
           </p>
         </div>
       </section>
-
+       
       <Footer />
     </div>
   );

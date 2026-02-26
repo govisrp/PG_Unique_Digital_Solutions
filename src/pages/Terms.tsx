@@ -1,16 +1,27 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+
 export default function Terms() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <header className="pt-28 pb-12 bg-secondary">
-        <div className="container mx-auto px-4">
-          <h1 className="font-display text-4xl font-bold text-foreground">Terms & Conditions</h1>
-          <p className="text-muted-foreground mt-2">Last updated: February 2026</p>
-        </div>
-      </header>
+     <header
+  className="relative min-h-[40vh] flex items-center justify-center pt-28 pb-20 overflow-hidden text-center"
+  style={{
+    background:
+      "linear-gradient(135deg, hsl(218, 56%, 8%) 0%, hsl(220, 70%, 16%) 100%)",
+  }}
+>
+  <div className="container mx-auto px-4">
+    <h1 className="font-display text-4xl md:text-5xl font-bold text-white">
+      Terms & Conditions
+    </h1>
+    <p className="text-white/70 mt-3">
+      Last updated: February 2026
+    </p>
+  </div>
+</header>
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="space-y-8">
@@ -21,7 +32,7 @@ export default function Terms() {
               { title: "4. Confidentiality", content: "We treat all client information as confidential. We sign NDAs upon request and ensure all team members are bound by confidentiality obligations." },
               { title: "5. Limitation of Liability", content: "PG Unique Digital Solutions' liability is limited to the value of services provided. We do not accept liability for indirect, consequential, or punitive damages." },
               { title: "6. Governing Law", content: "These terms are governed by the laws of India. Any disputes shall be resolved through arbitration in accordance with Indian law." },
-              { title: "7. Contact", content: "For any questions regarding these terms, contact info.pguniquedigitalsolutions@gmail.com." },
+              { title: "7. Contact", content: "For any questions regarding these terms, contact info.pguniquedigitalsolutions2@gmail.com." },
             ].map((s) => (
               <div key={s.title}>
                 <h2 className="font-display text-xl font-bold text-foreground mb-2">{s.title}</h2>

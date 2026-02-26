@@ -32,27 +32,34 @@ export default function About() {
       <Navbar />
 
       {/* Hero */}
-      <header
-        className="pt-28 pb-20 relative overflow-hidden"
-        style={{ background: "linear-gradient(135deg, hsl(218, 56%, 8%) 0%, hsl(220, 70%, 16%) 100%)" }}
-      >
-        <div className="absolute inset-0 grid-pattern opacity-30" />
-        <div className="relative container mx-auto px-4">
-          <div className="max-w-3xl">
-            <div className="inline-block text-xs font-semibold tracking-widest text-brand-light/80 uppercase mb-4">
-              About Us
-            </div>
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-5">
-              The Engineering + Growth Company{" "}
-              <span className="gradient-text">That Ships Results</span>
-            </h1>
-            <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              PG Unique Digital Solutions was founded on a single belief: that the best marketing is backed by great engineering,
-              and the best engineering serves clear business goals. We are the bridge.
-            </p>
-          </div>
-        </div>
-      </header>
+    <header
+  className="relative min-h-[60vh] flex items-center justify-center pt-28 pb-20 overflow-hidden"
+  style={{
+    background:
+      "linear-gradient(135deg, hsl(218, 56%, 8%) 0%, hsl(220, 70%, 16%) 100%)",
+  }}
+>
+  <div className="absolute inset-0 grid-pattern opacity-30" />
+
+  <div className="relative container mx-auto px-4 flex justify-center">
+    <div className="max-w-3xl text-center">
+      <div className="inline-block text-xs font-semibold tracking-widest text-brand-light/80 uppercase mb-4">
+        About Us
+      </div>
+
+      <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-5">
+        The Engineering + Growth Company{" "}
+        <span className="gradient-text">That Ships Results</span>
+      </h1>
+
+      <p className="text-white/70 text-lg leading-relaxed max-w-2xl mx-auto">
+        PG Unique Digital Solutions was founded on a single belief: that the
+        best marketing is backed by great engineering, and the best engineering
+        serves clear business goals. We are the bridge.
+      </p>
+    </div>
+  </div>
+</header>
 
       {/* Mission & Vision */}
       <section className="py-20 bg-background">

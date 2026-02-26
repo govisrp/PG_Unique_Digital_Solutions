@@ -23,6 +23,7 @@ const quickLinks = [
 export default function Footer() {
   return (
     <footer className="bg-brand-navy text-white/80" role="contentinfo">
+      
       {/* CTA Banner */}
       <div className="bg-gradient-brand py-12">
         <div className="container mx-auto px-4 text-center">
@@ -79,11 +80,11 @@ export default function Footer() {
                 +91 9182970173
               </a>
               <a
-                href="mailto:info.pguniquedigitalsolutions@gmail.com"
+                href="mailto:info.pguniquedigitalsolutions2@gmail.com"
                 className="flex items-center gap-2 text-sm text-white/70 hover:text-brand-light transition-colors break-all"
               >
                 <Mail size={14} className="text-brand-light flex-shrink-0" />
-                info.pguniquedigitalsolutions@gmail.com
+                info.pguniquedigitalsolutions2@gmail.com
               </a>
             </div>
             {/* Social Icons */}
