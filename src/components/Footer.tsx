@@ -1,6 +1,6 @@
 import pgLogo from "@/assets/pg-logo.jpg";
 import { Link } from "react-router-dom";
-import { Phone, Mail, MessageCircle, Linkedin, Twitter, Facebook, Instagram, ArrowRight } from "lucide-react";
+import { Phone, Mail, MessageCircle, Linkedin, Twitter, Facebook, Instagram, Youtube, ArrowRight } from "lucide-react";
 
 const services = [
   { label: "Digital Marketing", href: "/services/digital-marketing" },
@@ -88,20 +88,27 @@ export default function Footer() {
               </a>
             </div>
             {/* Social Icons */}
-            <div className="flex items-center gap-3 mt-5">
-              <a href="#" aria-label="LinkedIn" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue/50 transition-colors">
-                <Linkedin size={14} />
-              </a>
-              <a href="#" aria-label="Twitter/X" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue/50 transition-colors">
-                <Twitter size={14} />
-              </a>
-              <a href="#" aria-label="Facebook" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue/50 transition-colors">
-                <Facebook size={14} />
-              </a>
-              <a href="#" aria-label="Instagram" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue/50 transition-colors">
-                <Instagram size={14} />
-              </a>
-            </div>
+           <div className="flex items-center gap-3 mt-5">
+  <a href="https://www.linkedin.com/in/pg-unique-digital-solutions-2b580a3b1/" aria-label="LinkedIn" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue/50 transition-colors">
+    <Linkedin size={14} />
+  </a>
+
+  <a href="https://x.com/pgunique2" aria-label="Twitter/X" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue/50 transition-colors">
+    <Twitter size={14} />
+  </a>
+
+  <a href="https://www.facebook.com/profile.php?id=61588259556418" aria-label="Facebook" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue/50 transition-colors">
+    <Facebook size={14} />
+  </a>
+
+  <a href="https://www.instagram.com/info.pguniquedigitalsolutions/" aria-label="Instagram" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue/50 transition-colors">
+    <Instagram size={14} />
+  </a>
+
+  <a href="https://www.youtube.com/@PGUniqueDigitalSolutions" aria-label="YouTube" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue/50 transition-colors">
+    <Youtube size={14} />
+  </a>
+</div>
           </div>
 
           {/* Services */}
