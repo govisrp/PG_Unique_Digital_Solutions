@@ -89,7 +89,7 @@ export default function Footer() {
             </div>
             {/* Social Icons */}
            <div className="flex items-center gap-3 mt-5">
-  <a href="https://www.linkedin.com/in/pg-unique-digital-solutions-2b580a3b1/" aria-label="LinkedIn" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue/50 transition-colors">
+  <a href="https://www.linkedin.com/company/112013198/admin/dashboard/" aria-label="LinkedIn" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue/50 transition-colors">
     <Linkedin size={14} />
   </a>
 
