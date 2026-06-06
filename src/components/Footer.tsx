@@ -80,11 +80,11 @@ export default function Footer() {
                 +91 9182970173
               </a>
               <a
-                href="mailto:info.pguniquedigitalsolutions2@gmail.com"
+                href="mailto:info@pguniquedigitalsolutions.com"
                 className="flex items-center gap-2 text-sm text-white/70 hover:text-brand-light transition-colors break-all"
               >
                 <Mail size={14} className="text-brand-light flex-shrink-0" />
-                info.pguniquedigitalsolutions2@gmail.com
+                info@pguniquedigitalsolutions.com
               </a>
             </div>
             {/* Social Icons */}

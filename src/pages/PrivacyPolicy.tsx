@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
               { title: "3. Information Sharing", content: "We do not sell, trade, or rent your personal information to third parties. We may share information with trusted service providers who assist in operating our business, subject to confidentiality agreements." },
               { title: "4. Data Security", content: "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction." },
               { title: "5. Cookies", content: "Our website uses cookies to enhance your browsing experience and analyze site traffic. You can control cookie settings through your browser preferences." },
-              { title: "6. Contact Us", content: "For any privacy-related questions, contact us at info.pguniquedigitalsolutions2@gmail.com or call +91 9182970173." },
+              { title: "6. Contact Us", content: "For any privacy-related questions, contact us at info@pguniquedigitalsolutions.com or call +91 9182970173." },
             ].map((s) => (
               <div key={s.title}>
                 <h2 className="font-display text-xl font-bold text-foreground mb-2">{s.title}</h2>

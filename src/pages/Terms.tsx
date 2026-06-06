@@ -32,7 +32,7 @@ export default function Terms() {
               { title: "4. Confidentiality", content: "We treat all client information as confidential. We sign NDAs upon request and ensure all team members are bound by confidentiality obligations." },
               { title: "5. Limitation of Liability", content: "PG Unique Digital Solutions' liability is limited to the value of services provided. We do not accept liability for indirect, consequential, or punitive damages." },
               { title: "6. Governing Law", content: "These terms are governed by the laws of India. Any disputes shall be resolved through arbitration in accordance with Indian law." },
-              { title: "7. Contact", content: "For any questions regarding these terms, contact info.pguniquedigitalsolutions2@gmail.com." },
+              { title: "7. Contact", content: "For any questions regarding these terms, contact info@pguniquedigitalsolutions.com." },
             ].map((s) => (
               <div key={s.title}>
                 <h2 className="font-display text-xl font-bold text-foreground mb-2">{s.title}</h2>

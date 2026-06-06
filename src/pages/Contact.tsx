@@ -100,14 +100,14 @@ export default function Contact() {
                   </div>
                 </a>
 
-                <a href="mailto:info.pguniquedigitalsolutions2@gmail.com" className="flex items-center gap-4 p-4 rounded-xl border border-border hover:border-primary/30 hover:shadow-card transition-all group">
+                <a href="mailto:info@pguniquedigitalsolutions.com" className="flex items-center gap-4 p-4 rounded-xl border border-border hover:border-primary/30 hover:shadow-card transition-all group">
                   <div className="w-10 h-10 rounded-lg feature-icon flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Mail size={18} />
                   </div>
                   <div>
                     <div className="text-xs text-muted-foreground mb-0.5">Email Us</div>
                     <div className="font-semibold text-foreground text-sm">
-                      info.pguniquedigitalsolutions2@gmail.com
+                      info@pguniquedigitalsolutions.com
                     </div>
                   </div>
                 </a>
